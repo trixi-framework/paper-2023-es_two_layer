@@ -1,0 +1,18 @@
+{
+    "license": "MIT",
+    "title": "Reproducibility repository for An entropy stable discontinuous Galerkin method for the two-layer shallow water equations on curvilinear meshes",
+    "upload_type": "software",
+    "creators": [
+        {
+            "affiliation": "Department of Mathematics; Applied Mathematics, Linköping University, Sweden",
+            "name": "Ersing, Patrick",
+            "orcid": "0009-0005-3804-5380"
+        },
+        {
+            "affiliation": "Department of Mathematics; Applied Mathematics, Linköping University, Sweden",
+            "name": "Winters, Andrew R.",
+            "orcid": "0000-0002-5902-1522"
+        },
+    ],
+    "access_right": "open"
+}
