@@ -9,3 +9,9 @@ The folder has the follwing contents:
 - Directory `Parabolic_dam` with code and instructions to reproduce the results in Section 7.4.
 - The file `two_layer.jl` contains the additional Trixi equation folder for the two-layer shallow water equations.
 - The files `Manifest.toml` and `Project.toml` are used to recreate the Julia environment.
+
+The packages are installed automatically within the `two_layer.jl` file, which is called by each of run scripts. 
+
+If you want to run any of the other julia files individually start julia with the project directory set to the `code/` folder. Additionally, before first execution install the packages by executing
+
+`julia --project=code/ -e 'using Pkg; Pkg.instantiate()'`
