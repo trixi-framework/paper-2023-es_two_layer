@@ -22,7 +22,7 @@ use the implementations provided here, please **also** cite this repository as
 
 ## Abstract
 
-TODO: put abstract text here
+We present an entropy stable nodal discontinuous Galerkin spectral element method (DGSEM) for the two-layer shallow water equations on two dimensional curvilinear meshes. We mimic the continuous entropy analysis on the semi-discrete level with the DGSEM constructed on Legendre-Gauss-Lobatto (LGL) nodes. The use of LGL nodes endows the collocated nodal DGSEM with the summation-by-parts property that is key in the discrete analysis. The approximation exploits an equivalent flux differencing formulation for the volume contributions, which generate an entropy conservative split-form of the governing equations. A specific combination of an entropy conservative numerical surface flux and discretization of the nonconservative terms is then applied to obtain a high-order path-conservative scheme that is entropy conservative and has the well-balanced property for discontinuous bathymetry. Dissipation is added at the interfaces to create an entropy stable approximation that satisfies the second law of thermodynamics in the discrete case. We conclude with verification of the theoretical findings through numerical tests and demonstrate results about convergence, entropy stability and well-balancedness of the scheme.
 
 ## Numerical Experiments
 
