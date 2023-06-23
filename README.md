@@ -4,7 +4,20 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8059079.svg)](https://doi.org/10.5281/zenodo.8059079)
 
 This repository contains the information and code to reproduce the results of the not yet submitted
-article TODO: add arXiv bibtex.
+article
+```bibtex
+@online{ersing2023two,
+  title={An entropy stable discontinuous {G}alerkin method for the two-layer 
+         shallow water equations on curvilinear meshes},
+  author={Ersing, Patrick and Winters, Andrew R},
+  journal={Communications on Applied Mathematics and Computation},
+  year={2023},
+  month={06},
+  eprint={2306.12699},
+  eprinttype={arxiv},
+  eprintclass={math.NA}
+}
+```
 
 If you find these results useful, please cite the article mentioned above. If you
 use the implementations provided here, please **also** cite this repository as
