@@ -10,7 +10,7 @@ article
   title={An entropy stable discontinuous {G}alerkin method for the two-layer 
          shallow water equations on curvilinear meshes},
   author={Ersing, Patrick and Winters, Andrew R},
-  journal={Communications on Applied Mathematics and Computation},
+  journal={Journal of Scientific Computing},
   year={2023},
   month={06},
   eprint={2306.12699},
