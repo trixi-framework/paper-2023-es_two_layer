@@ -1,7 +1,7 @@
 # An entropy stable discontinuous Galerkin method for the two-layer shallow water equations on curvilinear meshes
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8059079.svg)](https://doi.org/10.5281/zenodo.8059079)
+[![DOI](https://zenodo.org/badge/655647824.svg)](https://zenodo.org/doi/10.5281/zenodo.8059078)
 
 This repository contains the information and code to reproduce the results of the not yet submitted
 article
