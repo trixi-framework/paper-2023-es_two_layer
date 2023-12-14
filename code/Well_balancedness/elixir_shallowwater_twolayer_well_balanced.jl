@@ -100,3 +100,22 @@ sol = solve(ode, CarpenterKennedy2N54(williamson_condition=false),
             dt=1.0, # solve needs some value here but it will be overwritten by the stepsize_callback
             save_everystep=false, callback=callbacks);
 summary_callback() # print the timer summary
+
+###############################################################################
+# Calculate Linf of H1 and H2
+
+u_ini = Trixi.wrap_array_native(sol[1], semi)  # initial solution
+u_end = Trixi.wrap_array_native(sol[2], semi)  # final solution
+
+err_u = u_end - u_ini
+# Calculate absolute error in primitive variables (H2 = h2 + b, H1 = h1 + h2 + b)
+err_H2 = abs.(err_u[4,:,:,:] + err_u[7,:,:,:])  
+err_H1 = abs.(err_u[1,:,:,:] + err_u[4,:,:,:] + err_u[7,:,:,:])
+
+# Get maximum value
+Linf_H1 = maximum(vec(err_H1))
+Linf_H2 = maximum(vec(err_H2))
+
+# Output
+println("Linf H1:\t", Linf_H1)
+println("Linf H2:\t", Linf_H2)

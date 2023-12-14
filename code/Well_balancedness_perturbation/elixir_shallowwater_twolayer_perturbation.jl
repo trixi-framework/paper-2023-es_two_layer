@@ -73,6 +73,7 @@ summary_callback = SummaryCallback()
 
 analysis_interval = 1
 analysis_callback = AnalysisCallback(semi, interval=analysis_interval,save_analysis=true,
+                                     extra_analysis_errors=(:conservation_error,),
                                      extra_analysis_integrals=(entropy,),
                                      output_directory="out")
 
